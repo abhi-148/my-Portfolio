@@ -1,0 +1,130 @@
+.skills-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+.skills-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 80px;
+  text-align: center;
+}
+
+/* ===== TITLE ===== */
+
+.skills-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.skills-title span {
+  color: #6366f1;
+}
+
+.skills-subtitle {
+  margin-top: 16px;
+  font-size: 1.15rem;
+  color: #c7d2fe;
+  animation: fadeUp 1s ease forwards;
+}
+
+/* ===== GRID ===== */
+
+.skills-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+/* ===== CARD ===== */
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 22px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  transform: translateY(40px);
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  transition: all 0.35s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  border-color: #6366f1;
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.35);
+}
+
+/* ===== HEADER ===== */
+
+.skill-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.skill-icon {
+  font-size: 1.9rem;
+  color: #6366f1;
+}
+
+.skill-head h3 {
+  flex: 1;
+  margin-left: 14px;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.skill-percent {
+  font-size: 0.9rem;
+  color: #c7d2fe;
+}
+
+/* ===== PROGRESS BAR ===== */
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  width: 0;
+  animation: fillBar 1.2s ease forwards;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.8);
+}
+
+/* ===== FOOTER HINT ===== */
+
+.skills-hint {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}

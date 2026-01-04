@@ -1,0 +1,24 @@
+.footer {
+  position: relative;
+  padding: 40px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+
+.footer-glow {
+  position: absolute;
+  inset: -120px;
+  background: radial-gradient(
+    circle at center,
+    rgba(99,102,241,0.25),
+    transparent 70%
+  );
+  z-index: 0;
+}
+
+.footer p {
+  position: relative;
+  z-index: 1;
+}
